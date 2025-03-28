@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
 
 import Link from "next/link";
 
@@ -18,16 +19,26 @@ export default function Home() {
           Ecommerence
         </Link>
 
-        <div className="flex space-x-6">
+        {/* Desktop Navbar */}
+        <div className="hidden md:flex space-x-6">
           <Link href={"/"}>Ana Sayfa</Link>
           <Link href={"/"}>Hakkımızda</Link>
           <Link href={"/"}>Ürünler</Link>
         </div>
+        {/* Desktop Navbar */}
 
-        <div>
+        {/* Mobile Navbar */}
+        <div className="md:hidden">
+          <Button variant="ghost" size="icon">
+            <Menu />
+          </Button>
+        </div>
+        {/* Mobile Navbar */}
+
+        <div className="hidden md:flex">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button>Dil</Button>
+              <Button className="cursor-pointer">Dil</Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuLabel>Diller</DropdownMenuLabel>
