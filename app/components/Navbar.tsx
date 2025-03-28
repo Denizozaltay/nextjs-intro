@@ -31,8 +31,8 @@ export default function Navbar() {
         {/* Desktop Navbar */}
         <div className="hidden md:flex space-x-6">
           <Link href={"/"}>Ana Sayfa</Link>
-          <Link href={"/"}>Hakkımızda</Link>
-          <Link href={"/"}>Ürünler</Link>
+          <Link href={"/hakkimizda"}>Hakkımızda</Link>
+          <Link href={"/urunler"}>Ürünler</Link>
         </div>
         {/* Desktop Navbar */}
 
@@ -51,8 +51,8 @@ export default function Navbar() {
         >
           <div className="flex flex-col space-y-4 p-6">
             <Link href={"/"}>Ana Sayfa</Link>
-            <Link href={"/"}>Hakkımızda</Link>
-            <Link href={"/"}>Ürünler</Link>
+            <Link href={"/hakkimizda"}>Hakkımızda</Link>
+            <Link href={"/urunler"}>Ürünler</Link>
           </div>
         </div>
         {/* Mobile Navbar */}
